@@ -17,11 +17,12 @@ Add the layer to your lambda ([Working with lambda layers](https://docs.aws.amaz
 Use the following environment variables to enable and control the extension behavior.
 
 | Name | Value                                                                                                                                |
-    |----- |--------------------------------------------------------------------------------------------------------------------------------------|
+|----- |--------------------------------------------------------------------------------------------------------------------------------------|
 | `TELEMETRY_EXTENSION_ENABLED`| Set `TELEMETRY_EXTENSION_ENABLED` to `true` to enable the extension. (Required)                                                      |
 | `TELEMETRY_EXTENSION_SUBSCRIBE_EVENTS`| Comma separated TelemetryAPI subscribe events. Supported events: `function`, `platform`, `extension`. (Default: `function`)          |
 | `TELEMETRY_EXTENSION_FLUENTD_ENABLED` | Forwards the telemetry info to Fluentd. (Default: `false`)                                                                           |
 | `TELEMETRY_EXTENSION_FLUENTD_HOST` | Fluentd Host (Used when `TELEMETRY_EXTENSION_FLUENTD_ENABLED` `true`).                                                                        |
 | `TELEMETRY_EXTENSION_FLUENTD_PORT` | Fluentd Port (Used when `TELEMETRY_EXTENSION_FLUENTD_ENABLED` `true`). (Default: `24224`)                                                     |
 | `TELEMETRY_EXTENSION_FLUENTD_TAG_NAME` | FluentD Tag name. (Default: `lambda`)                                                                                                |
+
 
